@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+for (var i = 0; i < 10; i++) {
+var numericOne = prompt("Введіть будь-ласка число");
+if(isNaN(numericOne)){
+alert("Вкажіть коректне число");
+continue;
+} else if(numericOne==null){
+    alert("До побачення!");
+    break;
+}
+var numericTwo = prompt("Введіть будь ласка інше число");
+if(isNaN(numericTwo)){
+alert("Вкажіть коректне число");
+continue;
+} else if(numericTwo==null) {
+    alert("До побачення!");
+    break;
+}
+var result = prompt("Вкажіть яку операцію потрібно з ними зробити; * помножити, - відняти, + додати, / поділити");
+if (result === "*") {
+alert(numericOne * numericTwo);
+} else if (result === "-") {
+alert(numericOne - numericTwo);
+} else if (result === "+") {
+alert(+numericOne + +numericTwo);
+} else if (result === "/") {
+alert(numericOne / numericTwo);
+} else if(result==null) {
+alert("До побачення!");
+break;
+} else{
+break;
+}
+var exit=prompt("Чи бажаєте знову скористатися калькулятором? y-так");
+if(exit!=="y"&&exit!=="yes"){
+break;
+}
+}
+</script>
+</body>
+</html>
